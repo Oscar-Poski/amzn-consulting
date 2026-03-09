@@ -6,129 +6,137 @@ import Features from "@/components/widgets/Features.astro";
 import devImg from "@/assets/images/dev_balanced.png";
 import openSourceImg from "@/assets/images/open-source.png";
 import Content2 from "@/components/widgets/Content2.astro";
+
 const metadata = {
-  title: `${siteConfig.name} — The next step for your project`,
+  title: `Consultoría Amazon Ads | Optimización de campañas y crecimiento`,
   description:
-    "A modern and professional template for your web projects with Astro and Tailwind CSS. Boost your development with a solid foundation.",
+    "Ayudo a marcas y vendedores a optimizar campañas de Amazon Ads, mejorar estructura, reducir desperdicio de presupuesto y escalar con datos.",
   ignoreTitleTemplate: true,
 };
 ---
 
 <BaseLayout {metadata}>
   <Hero
-    title={`Starter Template for <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Web Developers</span>`}
-    tagline="Astro v5 + Tailwind v4"
-    description={`${siteConfig.description}`}
+    title={`Optimiza tus campañas de <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Amazon Ads</span>`}
+    tagline="Performance para sellers y marcas"
+    description="Estructura, análisis y optmimización de tus campañas de Amazon para mejorar visibilidad, reducir gasto ineficiente y escalar con una estrategia basada en datos."
     actions={[
       {
-        text: "Get Started",
-        href: "https://github.com/devgelo-labs/astro-starter-pro",
+        text: "Solicitar auditoría",
+        href: "/contact",
         variant: "primary",
-        icon: "lucide:github",
+        icon: "lucide:search-check",
       },
       {
-        text: "Our Services",
+        text: "Ver servicios",
         href: "/services",
         variant: "secondary",
         icon: "lucide:arrow-right",
-        ariaLabel: "Learn more about our services",
+        ariaLabel: "Conoce nuestros servicios",
       },
     ]}
   />
+
   <Features
-    tagline="Features"
-    title="What's Included"
-    subtitle="A selection of tools and configurations to streamline your workflow."
+    tagline="Qué resolvemos"
+    title="Problemas comunes en Amazon Ads"
+    subtitle="Muchos anunciantes invierten presupuesto sin una estructura clara, sin análisis de términos de búsqueda y sin una estrategia real de escalamiento."
     features={[
       {
-        title: "Optimized SEO",
+        title: "Presupuesto desperdiciado",
         description:
-          "Base configuration for Meta tags, Open Graph, and Sitemap generation.",
-        icon: "lucide:scan-search",
+          "Detectamos campañas, keywords y targets que consumen inversión sin generar ventas consistentes.",
+        icon: "lucide:badge-dollar-sign",
         iconClass: "bg-blue-500/10 text-blue-400",
       },
       {
-        title: "High Performance",
-        description: "Lightweight structure for fast load times.",
-        icon: "lucide:zap",
+        title: "Estructura de campañas débil",
+        description:
+          "Reorganizamos campañas automáticas y manuales para que discovery, control y escalamiento trabajen juntos.",
+        icon: "lucide:workflow",
         iconClass: "bg-purple-500/10 text-purple-400",
       },
       {
-        title: "Tailwind v4",
+        title: "Poca claridad para crecer",
         description:
-          "Integrated configuration with the latest version of Tailwind CSS.",
-        icon: "lucide:palette",
+          "Convertimos datos de búsqueda y rendimiento en decisiones concretas para optimizar ACOS, CTR y conversión.",
+        icon: "lucide:chart-column-big",
         iconClass: "bg-pink-500/10 text-pink-400",
       },
     ]}
   />
+
   <Content2
     items={[
       {
-        title: "Responsive Design",
+        title: "Análisis de mercado y keywords",
         description:
-          "Base configuration for Meta tags, Open Graph, and Sitemap generation.",
-        icon: "lucide:scan-search",
+          "Investigamos competidores, términos relevantes y oportunidades de búsqueda para construir una base sólida.",
+        icon: "lucide:search",
         iconClass: "bg-blue-500/10 text-blue-400",
       },
       {
-        title: "High Performance",
-        description: "Lightweight structure for fast load times.",
-        icon: "lucide:zap",
+        title: "Curado y estructura de campañas",
+        description:
+          "Filtramos keywords, definimos prioridades y organizamos campañas según intención, match type y etapa.",
+        icon: "lucide:list-filter",
         iconClass: "bg-purple-500/10 text-purple-400",
       },
       {
-        title: "Tailwind v4",
+        title: "Optimización continua",
         description:
-          "Integrated configuration with the latest version of Tailwind CSS.",
-        icon: "lucide:palette",
+          "Revisamos términos de búsqueda, rendimiento y señales de conversión para ajustar bids, targets y presupuesto.",
+        icon: "lucide:sliders-horizontal",
         iconClass: "bg-pink-500/10 text-pink-400",
       },
     ]}
     image={devImg}
-    imageAlt="Development"
+    imageAlt="Proceso de optimización de campañas en Amazon"
   >
     <Fragment>
       <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Development
+        Un proceso claro para optimizar campañas
       </h3>
-      We provide a solid foundation to start your projects with best practices.
+      No se trata solo de lanzar anuncios. Se trata de entender qué términos tienen
+      potencial, cómo estructurar campañas correctamente y qué ajustes hacer después
+      de obtener datos reales del mercado.
     </Fragment>
   </Content2>
+
   <Content2
     items={[
       {
-        title: "Open Source",
+        title: "Enfoque basado en datos",
         description:
-          "Developed under the MIT license, free for personal and commercial use.",
-        icon: "lucide:github",
+          "Las decisiones se toman con base en desempeño, términos de búsqueda y potencial de conversión.",
+        icon: "lucide:database",
         iconClass: "bg-indigo-500/10 text-indigo-400",
       },
       {
-        title: "Community Driven",
+        title: "Visión integral",
         description:
-          "Built with the feedback and contributions of the developer community.",
-        icon: "lucide:users",
+          "No optimizamos solo campañas; también revisamos listing, keywords y contexto competitivo.",
+        icon: "lucide:layers-3",
         iconClass: "bg-orange-500/10 text-orange-400",
       },
       {
-        title: "Regular Updates",
+        title: "Estrategia para escalar",
         description:
-          "Continuously improved with the latest technologies and best practices.",
-        icon: "lucide:refresh-cw",
+          "La meta no es solo bajar costos, sino construir una cuenta publicitaria más ordenada, medible y escalable.",
+        icon: "lucide:trending-up",
         iconClass: "bg-teal-500/10 text-teal-400",
       },
     ]}
     image={openSourceImg}
-    imageAlt="Community and Open Source"
+    imageAlt="Consultoría estratégica para Amazon Ads"
     isReversed={true}
   >
     <Fragment>
       <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Open Source & Community
+        Consultoría enfocada en crecimiento rentable
       </h3>
-      Join the revolution of modern web development. This project is open for everyone
-      to use, learn from, and contribute to.
+      Trabajo con marcas y vendedores que quieren dejar atrás campañas improvisadas
+      y construir una operación publicitaria más estratégica dentro de Amazon.
     </Fragment>
   </Content2>
 </BaseLayout>
