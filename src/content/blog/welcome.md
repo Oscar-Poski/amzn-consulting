@@ -5,7 +5,7 @@ description: "This is the first post on our new Astro-powered blog."
 author: "Angelo Pescetto"
 category: "General"
 tags: ["welcome", "community", "astro"]
-image: "/blog/welcome.webp"
+image: "blog/welcome.webp"
 ---
 
 # Welcome!

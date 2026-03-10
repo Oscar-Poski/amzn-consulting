@@ -5,7 +5,7 @@ description: "Exploring the capabilities of Markdown in our blog."
 author: "Angelo Pescetto"
 category: "Tech"
 tags: ["markdown", "features", "astro"]
-image: "/blog/markdown.webp"
+image: "blog/markdown.webp"
 ---
 
 # Markdown is Great

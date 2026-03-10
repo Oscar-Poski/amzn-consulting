@@ -1,6 +1,8 @@
 ---
 import { siteConfig } from "@/config/site";
 import ThemeToggle from "@/components/ui/ThemeToggle.astro";
+
+const homeLink = siteConfig.navLinks[0]?.href ?? `${import.meta.env.BASE_URL}`;
 ---
 
 <nav
@@ -11,7 +13,7 @@ import ThemeToggle from "@/components/ui/ThemeToggle.astro";
   >
     <div class="flex items-center gap-2">
       <a
-        href="/"
+        href={homeLink}
         class="text-xl font-bold tracking-tight text-foreground transition-colors hover:text-primary"
       >
         {siteConfig.name}
