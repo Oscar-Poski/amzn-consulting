@@ -9,68 +9,76 @@ import consultingImg from "@/assets/images/services/consulting.webp";
 
 const services = [
   {
-    title: "Web Development",
-    description: "Static and dynamic sites built for the modern era.",
-    icon: "lucide:globe",
+    title: "Auditoría de Amazon Ads",
+    description:
+      "Revisión de estructura de campañas, términos de búsqueda, targets, bids y uso del presupuesto.",
+    icon: "lucide:search-check",
   },
   {
-    title: "SEO Optimization",
-    description: "We ensure your content is found by those looking for it.",
-    icon: "lucide:search",
+    title: "Optimización de campañas",
+    description:
+      "Ajustes sobre campañas automáticas y manuales para mejorar control, eficiencia y rendimiento.",
+    icon: "lucide:sliders-horizontal",
   },
   {
-    title: "IT Consulting",
-    description: "Technical advice to scale your projects to the next level.",
-    icon: "lucide:rocket",
+    title: "Estrategia de crecimiento",
+    description:
+      "Construcción de una estructura publicitaria más clara y escalable para crecer con datos.",
+    icon: "lucide:trending-up",
   },
 ];
+
 const metadata = {
-  title: "Services",
+  title: "Servicios",
   description:
-    "Discover our web development, SEO optimization, and technology consulting services.",
+    "Descubre los servicios de consultoría para optimización de campañas en Amazon: auditoría, estructura, keywords y escalamiento.",
 };
 ---
 
 <BaseLayout {metadata}>
   <Content
-    tagline="Services"
-    title="Our Services"
+    tagline="Servicios"
+    title="Servicios de consultoría para Amazon Ads"
     description={[
-      "Comprehensive solutions designed to maximize the potential of your digital presence.",
+      "Ayudamos a marcas y vendedores a estructurar, optimizar y escalar sus campañas en Amazon con un enfoque práctico, analítico y orientado a rentabilidad.",
     ]}
   />
+
   <ServiceList services={services} classes={{ container: "pt-0 md:pt-0" }} />
+
   <Content
-    tagline="Web Development"
-    title="Modern Web Development"
+    tagline="Auditoría"
+    title="Diagnóstico de cuenta y campañas"
     description={[
-      "We specialize in building fast, secure, and scalable websites using the latest technologies. We transform your vision into an impactful digital experience.",
+      "El primer paso es entender qué está pasando realmente dentro de la cuenta publicitaria. Revisamos estructura, distribución de presupuesto, campañas activas, términos de búsqueda y señales de desperdicio para detectar oportunidades claras de mejora.",
     ]}
     classes={{ container: "pb-0 md:pb-0" }}
   />
+
   <Content2
     items={[
       {
-        title: "Responsive Design",
+        title: "Revisión de estructura",
         description:
-          "Your site will look perfect on any device, from mobiles to desktop screens.",
+          "Analizamos si la cuenta está organizada de forma útil para discovery, control y escalamiento.",
       },
       {
-        title: "Optimized Performance",
+        title: "Detección de ineficiencias",
         description:
-          "Fast loading to improve user experience and SEO positioning.",
+          "Identificamos keywords, targets o campañas que consumen inversión sin aportar resultados consistentes.",
       },
     ]}
     image={webDevImg}
-    imageAlt="Modern Web Development"
+    imageAlt="Auditoría de campañas en Amazon"
     classes={{ container: "pt-0 md:pt-0" }}
   >
     <Fragment>
       <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Modern Web Development
+        Auditoría de Amazon Ads
       </h3>
-      We specialize in building fast, secure, and scalable websites using the latest
-      technologies. We transform your vision into an impactful digital experience.
+      Una auditoría bien hecha permite entender dónde se está perdiendo dinero, qué
+      campañas necesitan rediseño y qué oportunidades existen para mejorar el desempeño
+      general de la cuenta.
     </Fragment>
   </Content2>
 
@@ -78,51 +86,52 @@ const metadata = {
     isReversed={true}
     items={[
       {
-        title: "SEO Audit",
+        title: "Curado de keywords",
         description:
-          "We deeply analyze your website to identify technical and content improvement opportunities.",
+          "Filtramos y priorizamos keywords con base en relevancia, intención de compra y señales de conversión.",
       },
       {
-        title: "Content Strategy",
+        title: "Optimización operativa",
         description:
-          "We create relevant content plans that attract and retain your target audience.",
+          "Ajustamos campañas, match types, bids, negatives y segmentación para mejorar control y rendimiento.",
       },
     ]}
     image={seoImg}
-    imageAlt="SEO Strategies"
+    imageAlt="Optimización de keywords y campañas"
   >
     <Fragment>
       <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        SEO Optimization
+        Optimización de campañas y keywords
       </h3>
-      We help your business get found by the right people. Our organic positioning
-      strategies are designed to improve your organic visibility.
+      No se trata solo de activar anuncios. El trabajo está en ordenar campañas, interpretar
+      datos de búsqueda y convertir esa información en ajustes que mejoren CTR, conversión
+      y eficiencia publicitaria.
     </Fragment>
   </Content2>
 
   <Content2
     items={[
       {
-        title: "Digital Transformation",
+        title: "Escalamiento con datos",
         description:
-          "We guide you in adopting new technologies to optimize your business processes.",
+          "Tomamos decisiones de crecimiento sobre términos, campañas y productos que ya demostraron potencial.",
       },
       {
-        title: "Software Architecture",
+        title: "Visión estratégica",
         description:
-          "We design robust and scalable systems prepared for future growth.",
+          "Buscamos construir una operación publicitaria más clara, medible y sostenible en el tiempo.",
       },
     ]}
     image={consultingImg}
-    imageAlt="Technology Consulting"
+    imageAlt="Estrategia de crecimiento en Amazon Ads"
   >
     <Fragment>
       <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Technology Consulting
+        Estrategia para crecimiento rentable
       </h3>
-      We accompany you in critical decision-making. We evaluate your current infrastructure
-      and design personalized roadmaps to take your company to the next technological
-      level.
+      El objetivo no es únicamente bajar costos. También buscamos crear una base más
+      sólida para escalar campañas de forma ordenada, entendiendo qué funciona, qué
+      no funciona y dónde conviene invertir más presupuesto.
     </Fragment>
   </Content2>
 </BaseLayout>
